@@ -23,8 +23,9 @@ function App() {
                 as={ButtonGroup}
                 title="Genres"
                 variant="outline-secondary"
-                className="btn "
+                className="btn"
                 size="sm"
+                id="bottone"
               >
                 <Dropdown.Item eventKey="1">Comedy</Dropdown.Item>
                 <Dropdown.Item eventKey="2">Drama</Dropdown.Item>

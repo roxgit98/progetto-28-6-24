@@ -15,7 +15,7 @@ class Galleria extends Component {
 
   fetchMovies1 = () => {
     this.setState({ isLoading: true });
-    fetch("http://www.omdbapi.com/?apikey=142c9226&s=spider-man")
+    fetch("http://www.omdbapi.com/?apikey=142c9226&s=yu gi oh")
       .then((resp) => {
         if (resp.ok) {
           return resp.json();
@@ -34,7 +34,7 @@ class Galleria extends Component {
 
   fetchMovies2 = () => {
     this.setState({ isLoading: true });
-    fetch("http://www.omdbapi.com/?apikey=142c9226&s=harry potter")
+    fetch("http://www.omdbapi.com/?apikey=142c9226&s=dragon ball")
       .then((resp) => {
         if (resp.ok) {
           return resp.json();
@@ -53,7 +53,7 @@ class Galleria extends Component {
 
   fetchMovies3 = () => {
     this.setState({ isLoading: true });
-    fetch("http://www.omdbapi.com/?apikey=142c9226&s=star wars")
+    fetch("http://www.omdbapi.com/?apikey=142c9226&s=one piece")
       .then((resp) => {
         if (resp.ok) {
           return resp.json();
@@ -87,7 +87,7 @@ class Galleria extends Component {
           xl={6}
           className="mb-5 justify-content-evenly"
         >
-          {this.state.movies1.slice(0, 5).map((movie) => (
+          {this.state.movies1.slice(0, 6).map((movie) => (
             <Col key={movie.imdbID} className="mb-2 text-center px-1">
               <img src={movie.Poster} alt="movie" className="img-fluid" />
             </Col>
@@ -102,7 +102,7 @@ class Galleria extends Component {
           xl={6}
           className="mb-5 justify-content-evenly"
         >
-          {this.state.movies2.slice(0, 5).map((movie) => (
+          {this.state.movies2.slice(0, 6).map((movie) => (
             <Col key={movie.imdbID} className="mb-2 text-center px-1">
               <img src={movie.Poster} alt="movie" className="img-fluid" />
             </Col>
@@ -117,7 +117,7 @@ class Galleria extends Component {
           xl={6}
           className="mb-5 justify-content-evenly"
         >
-          {this.state.movies3.slice(0, 5).map((movie) => (
+          {this.state.movies3.slice(0, 6).map((movie) => (
             <Col key={movie.imdbID} className="mb-2 text-center px-1">
               <img src={movie.Poster} alt="movie" className="img-fluid" />
             </Col>

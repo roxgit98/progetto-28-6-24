@@ -2,7 +2,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import Logo from "../images/logo.png";
 import { Search, Bell, PersonCircle } from "react-bootstrap-icons";
 const MyNav = () => (
-  <Navbar expand="lg" className="bg-black">
+  <Navbar expand="lg">
     <Container fluid>
       <Navbar.Brand href="#home">
         <img src={Logo} alt="logo" width="100px" height="55px" />
